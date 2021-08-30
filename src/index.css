@@ -1,13 +1,152 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #1890ff;
+  font-size: 60px;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 0px;
+  text-decoration: none;
+  padding: 6px;
+  font-size: 20px;
+}
+.navbar a:hover {
+  color: #1890ff;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: #1890ff;
+  margin-bottom: 8px;
+}
+.blog-preview a {
+  text-decoration: none;
+}
+
+/* blog details page */
+.blog-details h2 {
+  font-size: 60px;
+  color: #1890ff;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+}
+.blog-details button {
+  background: #1890ff;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 40px;
+  color: #1890ff;
+  margin-bottom: 30px;
+}
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #1890ff;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sign-up-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px;
+}
+
+.form-input {
+  height: 42px;
+  min-width: 350px;
+  font-size: 24px;
+  margin: 16px;
+}
+
+.form-label {
+  font-size: 36px;
+  margin: 16px;
+  float: right;
+}
+
+.submit-btn {
+  margin: 24px 0;
+  color: white;
+  background: #1b326e;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-style: none;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  float: right;
+}
+
+.image {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+}
+.App {
+  min-height: 100vh;
 }
